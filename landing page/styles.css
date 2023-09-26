@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+}
+
+header, section, footer {
+    padding: 50px;
+    text-align: center;
+}
+
+header {
+    background-color: darkslategray;
+    
+}
+
+header h1 {
+    font-size: 3em;
+    color: white;
+    
+}
+
+section {
+    margin: 50px 0;
+}
+
+/* .feature i {
+    font-size: 6rem;
+
+
+}
+#newsletter i{
+    font-size: 6rem;
+} */
+ i{
+    font-size: 6rem;
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 10px;
+}
+
+form button {
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+testimonial blockquote {
+    font-style: italic;
+}
+
+testimonial cite {
+    font-weight: bold;
+}
+
+footer {
+    background:bisque;
+}
+footer i{
+    font-size: 2rem;
+    
+
+}
+footer i:hover{
+    color: red;
+}
+

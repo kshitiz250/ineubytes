@@ -1,0 +1,1 @@
+Single scroll based landing page on any digital marketing with newsletter sign up
