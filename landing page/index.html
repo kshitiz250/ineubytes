@@ -4,73 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Landing Page</title>
     <script src="https://kit.fontawesome.com/5d142cf428.js" crossorigin="anonymous"></script>
-    <title>Digital Marketing Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
+ 
 <body>
-    <header>
-        <h1>Elevate Your Digital Marketing Strategy</h1>
-    </header>
+    <main id="header">
+        <header id="nav-bar">
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#product">Product</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#testimonial">Testimonial</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </header>
 
-    <section id="why-choose-us">
-        <div class="feature">
-            <i class="fa-sharp fa-solid fa-people-group"></i>
-            <h2>Expert Team</h2>
-            <p>Our team of seasoned digital marketers brings a wealth of experience to every project, ensuring your
-                brand's.</p>
-            
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Digital Marketing</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eligendi voluptatem perspiciatis
+                    rem et? Deserunt exercitationem qui ullam earum error fugiat iure beatae pariatur quaerat ipsam fuga
+                    optio aliquam asperiores eum vero, maxime nam iusto, rerum nihil itaque odit officia.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </section>
+    </main>
+
+    <section id="info">
+        <div id="product">
+            <h1>Product</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error ea voluptatibus reprehenderit, sint,
+                accusantium quia, mollitia doloremque magni dolorum nam delectus ex assumenda. Quam nemo similique
+                labore minima officiis.</p>
         </div>
-
-    </section>
-
-    <section id="newsletter">
-        <i class="fa-regular fa-newspaper"></i>
-        <h2>Newsletter Sign-Up</h2>
-        <form>
-            <input type="email" placeholder="Enter your email address" required>
-            <button type="submit">Subscribe</button>
-        </form>
-        <p>Stay in the loop with the latest digital marketing trends, tips, and insights delivered straight to your
-            inbox. </p>
-    </section>
-
-    <section id="client-testimonials">
-        <i class="fa-solid fa-users-rectangle"></i>
-        <h2>What Our Clients Say</h2>
-        <div class="testimonial">
-            <blockquote>"Working with [Your Brand] transformed our online presence. Their strategies are top-notch!"
-            </blockquote>
-            <cite>- Client Name</cite>
+        <div id="benefits">
+            <h1>Benefits</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis perspiciatis vitae doloribus, ducimus
+                quod, voluptatum quibusdam qui accusantium consectetur blanditiis sunt dolorum exercitationem ad natus
+                cupiditate magni porro? Suscipit, blanditiis!</p>
         </div>
-        
+        <div id="testimonial">
+            <h1>Testimonial</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore laboriosam ut beatae accusamus fugit
+                similique, saepe eligendi exercitationem commodi alias ab quaerat quos error velit blanditiis eius
+                minima autem. Dolorum.</p>
+        </div>
     </section>
 
     <section id="contact">
-        <i class="fa-solid fa-address-book"></i>
-        <h2>Contact Us</h2>
-        <h3>Mob: 9410000007</h3>
-        <h3>Email: xyz@gmail.com</h3>
-        
-    </section>
+        <h1>contact</h1>
+        <div>
+            <div id="contact-form">
+                <form action="">
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email-id" id="email-id" placeholder="Your Email" required>
+                    <input type="text" name="message" id="message" placeholder="Message">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="contact-details">
 
-    <section id="get-started">
-        <i class="fa-solid fa-globe"></i>
-        <h2>Get Started Today</h2>
-        <a href="#newsletter">Subscribe Now</a>
-    </section>
+                <h2>get in touch</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae corrupti commodi dicta
+                    officiis distinctio inventore reiciendis, tenetur ullam porro id neque, repellendus consequuntur
+                    tempora ratione cupiditate deleniti mollitia ad omnis.</p>
 
-    <footer>
-        <p>Privacy Policy | Terms of Service | Copyright [Year] [Your Brand]</p>
-        <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-solid fa-envelope"></i>
+
+                <h2>my address</h2>
+                <ul>
+                    <li id="location">Delhi, India</li>
+                    <li id="mobile-no">xxxxxxxxxxx</li>
+                    <li id="email-id">xxxxxx@gmail.com</li>
+                </ul>
+
+            </div>
         </div>
-    </footer>
+        <section id="social-handles">
+            <ul>
+                <li><i class="fa-brands fa-linkedin"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></i></li>
+                <li><i class="fa-solid fa-envelope"></i></li>
+                <li><i class="fa-brands fa-x-twitter"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+            </ul>
+        </section>
+    </section>
+
+
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
